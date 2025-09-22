@@ -1,0 +1,9 @@
+{
+	"name": "aug2025democlass",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "09eb4e6a-80cc-4702-9ff4-43ce383b3ce4",
+		"tenantId": "ed317278-a9e1-4710-9d03-02918477a1b7"
+	}
+}
