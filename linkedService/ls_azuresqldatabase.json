@@ -1,0 +1,17 @@
+{
+	"name": "ls_azuresqldatabase",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "testserveraug2025.database.windows.net",
+			"database": "retaildatabaseaugust2025",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "Edukron",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDJBN0VDRTY1LTk0OUItNDZBQy1CREZDLTRDM0U4QzdCMEVFNF9kZDg4MTc0OC1kYTg4LTQ3ODktOTg3Zi1iZThiNzVmMjYyNGQiDQp9"
+		}
+	}
+}
