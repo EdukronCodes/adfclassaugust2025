@@ -7,6 +7,18 @@
 		},
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
+		},
+		"ls_azuresqldatabase_password": {
+			"value": ""
+		},
+		"ls_azuresqldatabase_properties_typeProperties_server": {
+			"value": "testserveraug2025.database.windows.net"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_database": {
+			"value": "retaildatabaseaugust2025"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_userName": {
+			"value": "Edukron"
 		}
 	}
 }

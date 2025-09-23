@@ -11,6 +11,22 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
+		"ls_azuresqldatabase_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_azuresqldatabase'"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "testserveraug2025.database.windows.net"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "retaildatabaseaugust2025"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Edukron"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +56,18 @@
 					},
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"ls_azuresqldatabase_password": {
+						"value": "[parameters('ls_azuresqldatabase_password')]"
+					},
+					"ls_azuresqldatabase_properties_typeProperties_server": {
+						"value": "[parameters('ls_azuresqldatabase_properties_typeProperties_server')]"
+					},
+					"ls_azuresqldatabase_properties_typeProperties_database": {
+						"value": "[parameters('ls_azuresqldatabase_properties_typeProperties_database')]"
+					},
+					"ls_azuresqldatabase_properties_typeProperties_userName": {
+						"value": "[parameters('ls_azuresqldatabase_properties_typeProperties_userName')]"
 					}
 				}
 			},
