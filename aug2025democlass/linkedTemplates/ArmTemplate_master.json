@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
 		},
+		"AzureBlobStorage3_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage3'"
+		},
 		"AzureSqlDatabase1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
@@ -22,6 +26,10 @@
 		"ls_azuresqldatabase_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'ls_azuresqldatabase'"
+		},
+		"ls_sqlservertoadlsgen2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_sqlservertoadlsgen2'"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
@@ -46,6 +54,18 @@
 		"ls_azuresqldatabase_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Edukron"
+		},
+		"ls_sqlservertoadlsgen2_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "retaildatabaseoct09.database.windows.net"
+		},
+		"ls_sqlservertoadlsgen2_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "retaildatabaseoct09"
+		},
+		"ls_sqlservertoadlsgen2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "edukron"
 		},
 		"containerUri": {
 			"type": "string",
@@ -80,11 +100,17 @@
 					"AzureBlobStorage2_connectionString": {
 						"value": "[parameters('AzureBlobStorage2_connectionString')]"
 					},
+					"AzureBlobStorage3_connectionString": {
+						"value": "[parameters('AzureBlobStorage3_connectionString')]"
+					},
 					"AzureSqlDatabase1_password": {
 						"value": "[parameters('AzureSqlDatabase1_password')]"
 					},
 					"ls_azuresqldatabase_password": {
 						"value": "[parameters('ls_azuresqldatabase_password')]"
+					},
+					"ls_sqlservertoadlsgen2_password": {
+						"value": "[parameters('ls_sqlservertoadlsgen2_password')]"
 					},
 					"AzureSqlDatabase1_properties_typeProperties_server": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
@@ -103,6 +129,15 @@
 					},
 					"ls_azuresqldatabase_properties_typeProperties_userName": {
 						"value": "[parameters('ls_azuresqldatabase_properties_typeProperties_userName')]"
+					},
+					"ls_sqlservertoadlsgen2_properties_typeProperties_server": {
+						"value": "[parameters('ls_sqlservertoadlsgen2_properties_typeProperties_server')]"
+					},
+					"ls_sqlservertoadlsgen2_properties_typeProperties_database": {
+						"value": "[parameters('ls_sqlservertoadlsgen2_properties_typeProperties_database')]"
+					},
+					"ls_sqlservertoadlsgen2_properties_typeProperties_userName": {
+						"value": "[parameters('ls_sqlservertoadlsgen2_properties_typeProperties_userName')]"
 					}
 				}
 			},

@@ -11,10 +11,16 @@
 		"AzureBlobStorage2_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
 		"ls_azuresqldatabase_password": {
+			"value": ""
+		},
+		"ls_sqlservertoadlsgen2_password": {
 			"value": ""
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
@@ -34,6 +40,15 @@
 		},
 		"ls_azuresqldatabase_properties_typeProperties_userName": {
 			"value": "Edukron"
+		},
+		"ls_sqlservertoadlsgen2_properties_typeProperties_server": {
+			"value": "retaildatabaseoct09.database.windows.net"
+		},
+		"ls_sqlservertoadlsgen2_properties_typeProperties_database": {
+			"value": "retaildatabaseoct09"
+		},
+		"ls_sqlservertoadlsgen2_properties_typeProperties_userName": {
+			"value": "edukron"
 		}
 	}
 }
