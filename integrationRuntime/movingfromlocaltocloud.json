@@ -1,0 +1,6 @@
+{
+	"name": "movingfromlocaltocloud",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
