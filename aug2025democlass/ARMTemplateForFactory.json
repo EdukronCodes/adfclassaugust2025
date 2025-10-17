@@ -153,11 +153,11 @@
 						"typeProperties": {
 							"notebookPath": "/Users/edukronplacements@gmail.com/Demo Notebook",
 							"baseParameters": {
-								"Pipelinename": {
+								"PipelineName": {
 									"value": "@pipeline().Pipeline",
 									"type": "Expression"
 								},
-								"Datafactorname": {
+								"DataFactoryName": {
 									"value": "@pipeline().DataFactory",
 									"type": "Expression"
 								}
