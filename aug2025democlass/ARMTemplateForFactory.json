@@ -151,7 +151,17 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"notebookPath": "/Users/edukronplacements@gmail.com/Demo Notebook"
+							"notebookPath": "/Users/edukronplacements@gmail.com/Demo Notebook",
+							"baseParameters": {
+								"Pipelinename": {
+									"value": "@pipeline().Pipeline",
+									"type": "Expression"
+								},
+								"Datafactorname": {
+									"value": "@pipeline().DataFactory",
+									"type": "Expression"
+								}
+							}
 						},
 						"linkedServiceName": {
 							"referenceName": "parametersdemo",
