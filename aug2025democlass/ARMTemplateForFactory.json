@@ -81,14 +81,14 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/web activity')]",
+			"name": "[concat(parameters('factoryName'), '/Notebook Data')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "Web1",
-						"type": "WebActivity",
+						"name": "Notebook1",
+						"type": "DatabricksNotebook",
 						"dependsOn": [],
 						"policy": {
 							"timeout": "0.12:00:00",
@@ -99,9 +99,11 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"method": "GET",
-							"headers": {},
-							"url": "https://jsonplaceholder.typicode.com/posts/1"
+							"notebookPath": "/Users/edukronplacements@gmail.com/Med Architecture"
+						},
+						"linkedServiceName": {
+							"referenceName": "AzureDatabricks1",
+							"type": "LinkedServiceReference"
 						}
 					}
 				],
@@ -110,7 +112,9 @@
 				},
 				"annotations": []
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureDatabricks1')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/AzureSqlTable1')]",
