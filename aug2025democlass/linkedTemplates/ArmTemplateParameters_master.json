@@ -17,6 +17,9 @@
 		"AzureDatabricks1_accessToken": {
 			"value": ""
 		},
+		"AzureDatabricks2_accessToken": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
@@ -26,8 +29,14 @@
 		"ls_sqlservertoadlsgen2_password": {
 			"value": ""
 		},
+		"parametersdemo_accessToken": {
+			"value": ""
+		},
 		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
 			"value": "0925-075332-jw5ot6fx"
+		},
+		"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"value": "1017-033413-xfwxe5g1"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "adfoct10.database.windows.net"
@@ -55,6 +64,9 @@
 		},
 		"ls_sqlservertoadlsgen2_properties_typeProperties_userName": {
 			"value": "edukron"
+		},
+		"parametersdemo_properties_typeProperties_existingClusterId": {
+			"value": "1017-033413-xfwxe5g1"
 		},
 		"containerUri": {
 			"value": ""

@@ -23,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
 		},
+		"AzureDatabricks2_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks2'"
+		},
 		"AzureSqlDatabase1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
@@ -35,9 +39,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'ls_sqlservertoadlsgen2'"
 		},
+		"parametersdemo_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'parametersdemo'"
+		},
 		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
 			"type": "string",
 			"defaultValue": "0925-075332-jw5ot6fx"
+		},
+		"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "1017-033413-xfwxe5g1"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
@@ -74,6 +86,10 @@
 		"ls_sqlservertoadlsgen2_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "edukron"
+		},
+		"parametersdemo_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "1017-033413-xfwxe5g1"
 		},
 		"containerUri": {
 			"type": "string",
@@ -114,6 +130,9 @@
 					"AzureDatabricks1_accessToken": {
 						"value": "[parameters('AzureDatabricks1_accessToken')]"
 					},
+					"AzureDatabricks2_accessToken": {
+						"value": "[parameters('AzureDatabricks2_accessToken')]"
+					},
 					"AzureSqlDatabase1_password": {
 						"value": "[parameters('AzureSqlDatabase1_password')]"
 					},
@@ -123,8 +142,14 @@
 					"ls_sqlservertoadlsgen2_password": {
 						"value": "[parameters('ls_sqlservertoadlsgen2_password')]"
 					},
+					"parametersdemo_accessToken": {
+						"value": "[parameters('parametersdemo_accessToken')]"
+					},
 					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
 						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					},
+					"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks2_properties_typeProperties_existingClusterId')]"
 					},
 					"AzureSqlDatabase1_properties_typeProperties_server": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
@@ -152,6 +177,9 @@
 					},
 					"ls_sqlservertoadlsgen2_properties_typeProperties_userName": {
 						"value": "[parameters('ls_sqlservertoadlsgen2_properties_typeProperties_userName')]"
+					},
+					"parametersdemo_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('parametersdemo_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},
