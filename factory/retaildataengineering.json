@@ -1,0 +1,9 @@
+{
+	"name": "retaildataengineering",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7313bd6b-1534-4f03-ba7c-60a922068d70",
+		"tenantId": "ed317278-a9e1-4710-9d03-02918477a1b7"
+	}
+}
